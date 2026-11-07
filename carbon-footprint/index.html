@@ -32,7 +32,7 @@
 <script>
 'use strict';
 // Teacher: paste the deployed Apps Script /exec URL here. Never paste the Sheet URL.
-const APPS_SCRIPT_URL = '';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw1EoarZ3bw0hOb7ev4Z5taUzpOmZhLxZVR6fgiJE4rwkPvDbaoWB2mX_6ykc-oGJPI/exec';
 const demoMode = new URLSearchParams(location.search).get('demo') === '1';
 let pendingSubmission=null, submissionRevision=0, submissionBusy=false;
 function clearSubmission(){submissionRevision++;pendingSubmission=null;el('submitStatus').textContent='';el('submitBtn').disabled=false;el('submitBtn').textContent='📤 ส่งผลให้ครู'}
